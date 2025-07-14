@@ -1,0 +1,123 @@
+<head> 
+  <style> 
+    * {
+      box-sizing: border-box;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .col-4 { width: 33.33% }
+
+    .card {
+      margin: 100px auto;
+      border-radius: 2px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .card-head {
+      background-color: lightgray;
+      padding: 10px 0;
+    }
+
+    .profile img {
+      height: 120px;
+      width: 120px;
+      border-radius: 120px;
+      margin: 15px auto;
+      display: block;
+    }
+
+    .name h1 {
+      font-size: 12px;
+      margin: 5px 0;
+    }
+
+    .bio p {
+      margin: 2px 0;
+      font-size: 7px;
+    }
+
+    .info {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 10px 0;
+    }
+
+    .info div h4 {
+      font-size: 10px;
+      margin: 0;
+    }
+
+    .info div p {
+      font-size: 6px;
+      margin: 0;
+    }
+
+	.more-btn button {
+      font-size: 10px;
+      padding: 6px 12px;
+      border-radius: 12px;
+      background-color: #87ceeb;
+      border: 1px solid #87ceeb;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0px 4px 8px rgba(135, 206, 235, 0.6);
+    }
+
+	.more{
+		color : lightgray;
+		font-size: 10px;
+	}
+
+  </style> 
+</head>
+
+<body>
+  <div class="row col-4">
+    <div class="card col-4">
+      <div class="card-head">
+        <div class="profile">
+          <img src="image.jpg" alt="">
+        </div>
+        <div class="name">
+          <h1>Sumit Brijmohan Yadav</h1>
+        </div>
+        <div class="bio">
+          <p>@sbini</p>
+          <p>Web Developer</p> 
+        </div>
+      </div>
+      <div class="class-bottom">
+        <div class="info">
+          <div class="shots">
+            <h4><b>17</b></h4>
+            <p>SHOTS</p>
+          </div>
+          <div class="following">
+            <h4><b>146</b></h4>
+            <p>FOLLOWING</p>
+          </div>
+          <div class="followers">
+            <h4><b>57</b></h4>
+            <p>FOLLOWERS</p>
+          </div>
+        </div>
+
+		<div class="more-btn"> 
+			<button> Send Messages </button>
+		</div>
+		
+		<div class="more"> 
+			<p> more </p>
+		</div>
+		
+      </div>
+    </div>
+  </div>
+</body>

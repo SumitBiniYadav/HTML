@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS link -->
+</head>
+<body>
+
+    <form id="contact-form">
+        <label class="form-label">Full Name:</label>
+        <input type="text" class="form-input" name="fullname">
+
+        <label class="form-label">Email:</label>
+        <input type="email" class="form-input" name="email">
+
+        <label class="form-label">Phone Number:</label>
+        <input type="tel" class="form-input" name="phone">
+
+        <label class="form-label">Subject:</label>
+        <select class="form-input" name="subject">
+            <option>General Inquiry</option>
+            <option>Support</option>
+            <option>Feedback</option>
+        </select>
+
+        <label class="form-label">Message:</label>
+        <textarea class="form-input" name="message"></textarea>
+
+        <button type="submit" id="submit-btn">Submit</button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Grid</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columns */
+      grid-gap: 20px;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .product-title {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .product-price {
+      font-size: 16px;
+      color: #28a745;
+    }
+
+    @media screen and (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid-container">
+    <div class="product-card">
+      <img src="product1.jpg" alt="Product 1">
+      <div class="product-info">
+        <h3 class="product-title">IPhone</h3>
+        <p class="product-price">₹999</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="product2.jpg" alt="Product 2">
+      <div class="product-info">
+        <h3 class="product-title">Mouse</h3>
+        <p class="product-price">₹1,299</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="product3.jpg" alt="Product 3">
+      <div class="product-info">
+        <h3 class="product-title">Keyboard</h3>
+        <p class="product-price">₹849</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="product4.jpg" alt="Product 4">
+      <div class="product-info">
+        <h3 class="product-title">Bluetooth Speaker</h3>
+        <p class="product-price">₹1,499</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="product5.jpg" alt="Product 5">
+      <div class="product-info">
+        <h3 class="product-title">Perfume</h3>
+        <p class="product-price">₹699</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="product6.jpg" alt="Product 6">
+      <div class="product-info">
+        <h3 class="product-title">Watch</h3>
+        <p class="product-price">₹2,099</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="product7.jpg" alt="Product 7">
+      <div class="product-info">
+        <h3 class="product-title">Perfume</h3>
+        <p class="product-price">₹1,099</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="product8.jpg" alt="Product 8">
+      <div class="product-info">
+        <h3 class="product-title">Camera</h3>
+        <p class="product-price">₹599</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="product9.jpg" alt="Product 9">
+      <div class="product-info">
+        <h3 class="product-title">Sneaker</h3>
+        <p class="product-price">₹1,899</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
